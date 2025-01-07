@@ -80,6 +80,7 @@ public class Main {
         System.out.println("Задача 4");
         int[] numbers = {2, 4 };
         for (int i = 0; i < numbers.length; i++) {
+
             System.out.print(Arrays.toString(numbers));
         }
         }
