@@ -14,7 +14,6 @@ public class Main {
         double[] fractions = {1.57, 7.654, 9.986};
         int[] primeNumbers = {90, 91, 93, 92, 85, 87, 84, 83, 0};
 
-
         System.out.println();
     }
 
