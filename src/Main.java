@@ -69,7 +69,6 @@ public class Main {
         System.out.print(primeNumbers[0] + ", ");
         System.out.println();
 
-
         System.out.println();
     }
 
