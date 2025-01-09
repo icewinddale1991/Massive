@@ -57,26 +57,26 @@ public class Main {
         System.out.print(fractions[0] + ".");
         System.out.println();
 
-        int[] primeNumbers = {90, 91, 93, 92, 85, 87, 84, 83, 0};
-        System.out.print(primeNumbers[8] + ", ");
-        System.out.print(primeNumbers[7] + ", ");
-        System.out.print(primeNumbers[6] + ", ");
-        System.out.print(primeNumbers[5] + ", ");
-        System.out.print(primeNumbers[4] + ", ");
-        System.out.print(primeNumbers[3] + ", ");
-        System.out.print(primeNumbers[2] + ", ");
-        System.out.print(primeNumbers[1] + ", ");
-        System.out.print(primeNumbers[0] + ", ");
-        System.out.println();
+        int[] primeNumbers = {90, 91, 93, 92, 85, 87, 84, 83, 1};
+        for (int i = primeNumbers.length -1; i >= 0 ;i--) {
+            if (i ==0 ) {
+                System.out.print(primeNumbers[i]);
+            } else {
+                System.out.print(primeNumbers[i] + ", ");
+            }
 
+        }
         System.out.println();
     }
 
     public static void taskFour() {
         System.out.println("Задача 4");
-        int[] numbers = {2, 4 };
-        for (int i = 0; i < numbers.length; i++) {
-            System.out.print(Arrays.toString(numbers));
+        int[] numbers = {1, 2, 3 };
+        for (int i = 0 ; i < numbers.length; i++) {
+            if (numbers[i] % 2 != 0) {
+                numbers[i] ++;
+            }
         }
-        }
+        System.out.print(Arrays.toString(numbers));
     }
+}
