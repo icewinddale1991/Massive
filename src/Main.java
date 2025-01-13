@@ -8,13 +8,24 @@ public class Main {
         taskFour();
     }
 
+    public static int[] generateRandomArray() {
+        java.util.Random random = new java.util.Random();
+        int[] arr = new int[30];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = random.nextInt(100_000) + 100_000;
+        }
+        return arr;
+    }
+
+
     public static void taskOne() {
         System.out.println("Задача 1");
-        int[] numbers = new int[3];
-        double[] fractions = {1.57, 7.654, 9.986};
-        int[] primeNumbers = {90, 91, 93, 92, 85, 87, 84, 83, 0};
-
-        System.out.println();
+        int[] arr = generateRandomArray();
+        int summ = 0;
+        for (int i = 0; i < arr.length; i++) {
+            summ += arr[i];
+            System.out.println(summ);
+        }
     }
 
     public static void taskTwo() {
@@ -58,8 +69,8 @@ public class Main {
         System.out.println();
 
         int[] primeNumbers = {90, 91, 93, 92, 85, 87, 84, 83, 1};
-        for (int i = primeNumbers.length -1; i >= 0 ;i--) {
-            if (i ==0 ) {
+        for (int i = primeNumbers.length - 1; i >= 0; i--) {
+            if (i == 0) {
                 System.out.print(primeNumbers[i]);
             } else {
                 System.out.print(primeNumbers[i] + ", ");
@@ -71,10 +82,10 @@ public class Main {
 
     public static void taskFour() {
         System.out.println("Задача 4");
-        int[] numbers = {1, 2, 3 };
-        for (int i = 0 ; i < numbers.length; i++) {
+        int[] numbers = {1, 2, 3};
+        for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] % 2 != 0) {
-                numbers[i] ++;
+                numbers[i]++;
             }
         }
         System.out.print(Arrays.toString(numbers));
